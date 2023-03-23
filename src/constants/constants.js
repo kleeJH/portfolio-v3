@@ -221,7 +221,7 @@ const projects = [
     has_source_code: true,
     source_code_link: "https://github.com/kleeJH/portfolio-v2",
     has_project_link: true,
-    project_link: "https://junhong-portfolio.netlify.app/",
+    project_link: "https://junhong-portfolio-v2.netlify.app/",
   },
   {
     name: "Portfolio V3",
@@ -246,10 +246,10 @@ const projects = [
       },
     ],
     image: portfolio_v3,
-    has_source_code: false,
-    source_code_link: "",
-    has_project_link: false,
-    project_link: "",
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/portfolio-v3",
+    has_project_link: true,
+    project_link: "https://junhong-portfolio.netlify.app/",
   },
 ];
 
