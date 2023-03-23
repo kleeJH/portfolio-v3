@@ -1,0 +1,48 @@
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #050816 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 5rem;
+  position: absolute;
+  width: 15rem;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(80%);
+  }
+}
+
+.animate-left {
+  animation: scroll-left 15s linear infinite;
+  display:flex;
+}
+
+.animate-right {
+  animation: scroll-right 15s linear infinite;
+  display:flex;
+}
