@@ -10,7 +10,8 @@ import {
   reactjs,
   tailwind,
   capitaldynamics,
-  cpp,
+  htconsulting,
+  cs,
   python,
   java,
   flutter,
@@ -20,6 +21,7 @@ import {
   portfolio_v2,
   portfolio_v3,
   threejs,
+  vincenttan,
 } from "../assets";
 
 export const navLinks = [
@@ -43,11 +45,11 @@ const services = [
     icon: student,
   },
   {
-    title: "Web Developer",
+    title: "Software Developer",
     icon: web_developer,
   },
   {
-    title: "Data Analytics",
+    title: "Data Science & Analytics",
     icon: data_analytics,
   },
   {
@@ -82,8 +84,8 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "C++",
-    icon: cpp,
+    name: "C#",
+    icon: cs,
   },
   {
     name: "Python",
@@ -116,8 +118,8 @@ const education = [
       color: "#f5222d",
     },
     educationFacility: "Monash University Malaysia",
-    result: "As of Year 3 Semester 2, my GPA is 3.955.",
-    hasGraduated: false,
+    result: "Soon to graduate with a GPA of 3.958.",
+    hasGraduated: true,
   },
   {
     certification: "Australian Matriculation",
@@ -155,18 +157,34 @@ const experiences = [
       "Development of Mobile App using Dart, Flutter and Bloc design pattern",
       "Implementing responsive design and ensuring cross-browser compatibility",
       "Backend development using Django and Django REST Framework to create APIs and webhook listener",
-      "Integrated a Know-Your-Customer service into their Web App, Mobile App, and backend",
+      "Integrated a Know-Your-Customer service into their Web App, Mobile App, and Backend",
     ],
+    remarks: [],
+  },
+  {
+    title: "Software Developer",
+    company_name: "HT Consulting (Asia) Sdn. Bhd.",
+    icon: htconsulting,
+    iconBg: "#D3D3D3",
+    date: "June 2023 - Aug 2023",
+    points: [
+      "Develop Frontend Web App using modern web technologies (React, MUI)",
+      "Developed small-scale C# ASP.NET Windows App and fixed bugs in existing software",
+      "Fully developed a Backend API using C# ASP.NET Core (Model, Controller)",
+      "Contributed to a System Architecture proposal",
+      "Reason for short employment: Unable to commute to work due to major car accident",
+    ],
+    remarks: [{ title: "Reason for short employment", text: "Unable to commute to work due to major car accident" }],
   },
 ];
 
 const testimonials = [
   {
-    testimonial: "...",
-    name: "...",
-    designation: "...",
-    company: "...",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    testimonial: "We worked together at HT Consulting (Asia), and I appreciated his approach to the job. Kevin was a good team player and fast learner. He is reliable and got things done well and within the allotted timeframe, he did not shy away from tasks that he had little to no experience in and constantly tried to make sure that he gets them done the best he can. I believe Kevin has a lot of potential and would be a valuable addition to any workplace.",
+    name: "Vincent Tan",
+    designation: "Software Engineer",
+    company: "HT Consulting (Asia) Sdn. Bhd.",
+    image: vincenttan, // https://media.licdn.com/dms/image/C5603AQHWwL1AF5Vu7Q/profile-displayphoto-shrink_800_800/0/1603286673419?e=1699488000&v=beta&t=mSm9mqFVAc7mXM0DrwmfLxapwOekCsUkUxwObAjaDiI
   },
 ];
 

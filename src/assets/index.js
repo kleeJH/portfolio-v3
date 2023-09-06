@@ -21,7 +21,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import cpp from "./tech/cpp.png";
+import cs from "./tech/cs.png";
 import python from "./tech/python.png";
 import java from "./tech/java.png";
 import flutter from "./tech/flutter.png";
@@ -30,10 +30,13 @@ import r from "./tech/r.png";
 import tensorflow from "./tech/tensorflow.png";
 
 import capitaldynamics from "./company/capitaldynamics.png";
+import htconsulting from "./company/htconsulting.png"
 
 import portfolio_v1 from "./projects/portfolio-v1.jpg";
 import portfolio_v2 from "./projects/portfolio-v2.jpg";
 import portfolio_v3 from "./projects/portfolio-v3.jpg";
+
+import vincenttan from "./testimonials/testimonials-vincenttan.jpeg"
 
 export {
   student,
@@ -57,7 +60,7 @@ export {
   tailwind,
   typescript,
   threejs,
-  cpp,
+  cs,
   python,
   java,
   flutter,
@@ -65,7 +68,9 @@ export {
   r,
   tensorflow,
   capitaldynamics,
+  htconsulting,
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
+  vincenttan
 };

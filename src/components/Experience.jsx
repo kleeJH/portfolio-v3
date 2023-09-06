@@ -45,6 +45,33 @@ const ExperienceCard = ({ experience }) => {
             </li>
           ))}
         </ul>
+
+        {experience.remarks.length > 0 ? (
+          <div className="pt-5">
+            {experience.remarks.map((remark, index) => (
+              <div
+                key={`experience-point-${index}`}
+                className={`text-white-100 text-[14px] tracking-wider ${
+                  experience.remarks.length - 1 != index ? "pb-1" : ""
+                }`}
+              >
+                <span
+                  className="text-transparent bg-clip-text bg-gradient-to-r from-[#5efff2] to-blue-800 text-[16px]"
+                  style={{ fontWeight: 800 }}
+                >
+                  {remark.title}
+                </span>
+                <br />
+                <div className="flex">
+                  <span className="pr-2">➜</span>
+                  <span>{remark.text}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     </VerticalTimelineElement>
   );

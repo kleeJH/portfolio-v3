@@ -22,7 +22,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo_sakura} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#5efff2] to-blue-500 text-[18px] font-bold cursor-pointer">
             Jun Hong
           </p>
         </Link>
