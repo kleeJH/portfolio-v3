@@ -172,7 +172,6 @@ const experiences = [
       "Developed small-scale C# ASP.NET Windows App and fixed bugs in existing software",
       "Fully developed a Backend API using C# ASP.NET Core (Model, Controller)",
       "Contributed to a System Architecture proposal",
-      "Reason for short employment: Unable to commute to work due to major car accident",
     ],
     remarks: [{ title: "Reason for short employment", text: "Unable to commute to work due to major car accident" }],
   },
