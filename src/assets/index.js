@@ -35,18 +35,27 @@ import htconsulting from "./company/htconsulting.png"
 import portfolio_v1 from "./projects/portfolio-v1.jpg";
 import portfolio_v2 from "./projects/portfolio-v2.jpg";
 import portfolio_v3 from "./projects/portfolio-v3.jpg";
+import authentication from "./projects/authentication.png";
+import messagesender from "./projects/MessageSender_Control.png";
 
 import vincenttan from "./testimonials/testimonials-vincenttan.jpeg"
 
 export {
+  // Logo
+  logo_sakura,
+
+  // Icons
+  menu,
+  close,
+
+  // About
   student,
   web_developer,
   data_analytics,
   deep_learning,
   programmer,
-  logo_sakura,
-  menu,
-  close,
+
+  // Programming Languages
   css,
   docker,
   figma,
@@ -67,10 +76,18 @@ export {
   android,
   r,
   tensorflow,
+
+  // Jobs
   capitaldynamics,
   htconsulting,
+
+  // Projects
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
-  vincenttan
+  authentication,
+  messagesender,
+
+  // Testimonials
+  vincenttan,
 };

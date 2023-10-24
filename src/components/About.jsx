@@ -43,10 +43,9 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am currently studying for a Bachelor's degree in Computer Science at
-        Monash University. My personal goal and objectives are to learn and
-        experience new prospects at the industry level, build trust and guide my
-        career goals.
+        Graduated with a Bachelor's degree in Computer Science at
+        Monash University. My goals and objectives are to learn and experience new 
+        prospects at the industry level, build trust, and guide my career goals.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

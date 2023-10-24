@@ -20,7 +20,8 @@ import {
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
-  threejs,
+  authentication,
+  messagesender,
   vincenttan,
 } from "../assets";
 
@@ -41,7 +42,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Student",
+    title: "Learner",
     icon: student,
   },
   {
@@ -118,7 +119,7 @@ const education = [
       color: "#f5222d",
     },
     educationFacility: "Monash University Malaysia",
-    result: "Soon to graduate with a GPA of 3.958.",
+    result: "Graduated with a GPA of 3.958.",
     hasGraduated: true,
   },
   {
@@ -170,7 +171,7 @@ const experiences = [
     points: [
       "Develop Frontend Web App using modern web technologies (React, MUI)",
       "Developed small-scale C# ASP.NET Windows App and fixed bugs in existing software",
-      "Fully developed a Backend API using C# ASP.NET Core (Model, Controller)",
+      "Fully developed a Backend API using C# ASP.NET (Model, Controller)",
       "Contributed to a System Architecture proposal",
     ],
     remarks: [{ title: "Reason for short employment", text: "Unable to commute to work due to major car accident" }],
@@ -180,7 +181,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial: "We worked together at HT Consulting (Asia), and I appreciated his approach to the job. Kevin was a good team player and fast learner. He is reliable and got things done well and within the allotted timeframe, he did not shy away from tasks that he had little to no experience in and constantly tried to make sure that he gets them done the best he can. I believe Kevin has a lot of potential and would be a valuable addition to any workplace.",
-    name: "Vincent Tan",
+    name: "Vincent Tan Zhen Shun",
     designation: "Software Engineer",
     company: "HT Consulting (Asia) Sdn. Bhd.",
     image: vincenttan, // https://media.licdn.com/dms/image/C5603AQHWwL1AF5Vu7Q/profile-displayphoto-shrink_800_800/0/1603286673419?e=1699488000&v=beta&t=mSm9mqFVAc7mXM0DrwmfLxapwOekCsUkUxwObAjaDiI
@@ -267,6 +268,58 @@ const projects = [
     source_code_link: "https://github.com/kleeJH/portfolio-v3",
     has_project_link: true,
     project_link: "https://junhong-portfolio.netlify.app/",
+  },
+  {
+    name: "JWT Authentication",
+    description:
+      "Implementation of a simple JWT authentication with the refresh token feature for user login feature.",
+    tags: [
+      {
+        name: "csharp",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "asp.netcore",
+        color: "green-text-gradient",
+      },
+      {
+        name: "webapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: authentication,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/aspdotnet-jwt-auth",
+    has_project_link: false,
+    project_link: null,
+  },
+  {
+    name: "Message Sender",
+    description:
+      "A simple application that sends requests to different communication protocols and displays the response.",
+    tags: [
+      {
+        name: "csharp",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aspdotnetcore",
+        color: "green-text-gradient",
+      },
+      {
+        name: "windowsform",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: messagesender,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/dotnet-message-sender",
+    has_project_link: false,
+    project_link: null,
   },
 ];
 
