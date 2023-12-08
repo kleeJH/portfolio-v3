@@ -1,6 +1,6 @@
 // REFERENCE: https://www.florin-pop.com/blog/2019/04/how-to-create-a-timeline-with-react/
 
-import React, { useState} from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
 
@@ -8,6 +8,29 @@ import "./Timeline.css";
 
 const TimelineItem = ({ data, index }) => {
   const [hover, setHover] = useState(false);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+  }
+  useEffect(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    return () => {
+      window.removeEventListener("resize", handleWindowSizeChange);
+    };
+  }, []);
+
+  const isMobile = width <= 768;
+
+  function fadeInDirection(index) {
+    if (isMobile) return "up";
+
+    if (index % 2 == 0) {
+      return "left";
+    } else {
+      return "right";
+    }
+  }
 
   function hexToRgbA(hex) {
     var c;
@@ -28,11 +51,7 @@ const TimelineItem = ({ data, index }) => {
 
   return (
     <motion.div
-      // whileInView={
-      //   {scale: [1, 1.1, 1], opacity: [0, 1], x: [0, 0]}
-      // }
-      // transition={{ duration: 0.6, type: "spring", delay: index * 0.2 }}
-      variants={fadeIn(index % 2 == 0 ? "left" : "right", "spring", 0.5 * index, 0.7)}
+      variants={fadeIn(fadeInDirection(index), "spring", 0.5 * index, 0.7)}
       className="timeline-item"
     >
       <div

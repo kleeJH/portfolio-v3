@@ -4,7 +4,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants/constants";
+import { personalLinks, projects } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -89,7 +89,7 @@ const Works = () => {
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <div className="w-full flex-col">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -100,6 +100,22 @@ const Works = () => {
           technologies. Each projects will be briefly described and links to my
           code repository may be included within it.
         </motion.p>
+
+        <motion.a
+          variants={fadeIn("", "", 0.1, 1)}
+          href={`${personalLinks.github}`}
+          target="_blank"
+        >
+          <div
+            className={`w-fit hero-join-button-dark p-[1.2px] rounded-xl mt-5`}
+          >
+            <div className="bg-[#050816] w-fit rounded-xl">
+              <span className={`${styles.highlightText} bg-black px-5 py-1.5`}>
+                Check out my GitHub profile for more of my projects!
+              </span>
+            </div>
+          </div>
+        </motion.a>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">

@@ -22,8 +22,14 @@ import {
   portfolio_v3,
   authentication,
   messagesender,
+  prompter,
   vincenttan,
 } from "../assets";
+
+const personalLinks = {
+  github: "https://github.com/kleeJH/",
+  gmail: "klee.junhong@gmail.com"
+}
 
 export const navLinks = [
   {
@@ -174,7 +180,7 @@ const experiences = [
       "Fully developed a Backend API using C# ASP.NET (Model, Controller)",
       "Contributed to a System Architecture proposal",
     ],
-    remarks: [{ title: "Reason for short employment", text: "Unable to commute to work due to major car accident" }],
+    remarks: [{ title: "Reason for short employment", text: "Unable to commute to work due to car accident" }],
   },
 ];
 
@@ -321,9 +327,34 @@ const projects = [
     has_project_link: false,
     project_link: null,
   },
+  {
+    name: "Prompter",
+    description:
+      "A web application that allows users to share their prompts used in LLMs (such as Chat GPT) with others.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: prompter,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/nextjs-prompter",
+    has_project_link: false,
+    project_link: null,
+  },
 ];
 
 export {
+  personalLinks,
   services,
   technologies,
   education,

@@ -37,6 +37,7 @@ import portfolio_v2 from "./projects/portfolio-v2.jpg";
 import portfolio_v3 from "./projects/portfolio-v3.jpg";
 import authentication from "./projects/authentication.png";
 import messagesender from "./projects/MessageSender_Control.png";
+import prompter from "./projects/prompter.png"
 
 import vincenttan from "./testimonials/testimonials-vincenttan.jpeg"
 
@@ -87,6 +88,7 @@ export {
   portfolio_v3,
   authentication,
   messagesender,
+  prompter,
 
   // Testimonials
   vincenttan,
