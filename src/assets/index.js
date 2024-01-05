@@ -32,6 +32,7 @@ import tensorflow from "./tech/tensorflow.png";
 import capitaldynamics from "./company/capitaldynamics.png";
 import htconsulting from "./company/htconsulting.png"
 
+import tdj from "./projects/tdj.png";
 import portfolio_v1 from "./projects/portfolio-v1.jpg";
 import portfolio_v2 from "./projects/portfolio-v2.jpg";
 import portfolio_v3 from "./projects/portfolio-v3.jpg";
@@ -83,6 +84,7 @@ export {
   htconsulting,
 
   // Projects
+  tdj,
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,

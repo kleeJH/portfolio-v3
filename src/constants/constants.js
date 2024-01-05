@@ -17,6 +17,7 @@ import {
   flutter,
   android,
   r,
+  tdj,
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
@@ -195,6 +196,34 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "TDJ Website",
+    description:
+      "A website for an elementary school (Tadika Desa Jaya) using Next JS, React JS, Tailwind CSS, TypeScript, Framer Motion & Vercel.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framermotion",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: tdj,
+    has_source_code: false,
+    source_code_link: null,
+    has_project_link: true,
+    project_link: "https://www.tadikadesajaya.edu.my",
+  },
   {
     name: "Portfolio V1",
     description:
