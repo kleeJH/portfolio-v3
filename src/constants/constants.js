@@ -29,8 +29,8 @@ import {
 
 const personalLinks = {
   github: "https://github.com/kleeJH/",
-  gmail: "klee.junhong@gmail.com"
-}
+  gmail: "klee.junhong@gmail.com",
+};
 
 export const navLinks = [
   {
@@ -170,7 +170,7 @@ const experiences = [
     remarks: [],
   },
   {
-    title: "Software Developer",
+    title: "Software Developer Intern",
     company_name: "HT Consulting (Asia) Sdn. Bhd.",
     icon: htconsulting,
     iconBg: "#D3D3D3",
@@ -178,16 +178,17 @@ const experiences = [
     points: [
       "Develop Frontend Web App using modern web technologies (React, MUI)",
       "Developed small-scale C# ASP.NET Windows App and fixed bugs in existing software",
-      "Fully developed a Backend API using C# ASP.NET (Model, Controller)",
+      "Fully developed a Backend API using C# ASP.NET",
       "Contributed to a System Architecture proposal",
     ],
-    remarks: [{ title: "Reason for short employment", text: "Unable to commute to work due to car accident" }],
+    remarks: [],
   },
 ];
 
 const testimonials = [
   {
-    testimonial: "We worked together at HT Consulting (Asia), and I appreciated his approach to the job. Kevin was a good team player and fast learner. He is reliable and got things done well and within the allotted timeframe, he did not shy away from tasks that he had little to no experience in and constantly tried to make sure that he gets them done the best he can. I believe Kevin has a lot of potential and would be a valuable addition to any workplace.",
+    testimonial:
+      "We worked together at HT Consulting (Asia), and I appreciated his approach to the job. Kevin was a good team player and fast learner. He is reliable and got things done well and within the allotted timeframe, he did not shy away from tasks that he had little to no experience in and constantly tried to make sure that he gets them done the best he can. I believe Kevin has a lot of potential and would be a valuable addition to any workplace.",
     name: "Vincent Tan Zhen Shun",
     designation: "Software Engineer",
     company: "HT Consulting (Asia) Sdn. Bhd.",
@@ -199,7 +200,7 @@ const projects = [
   {
     name: "TDJ Website",
     description:
-      "A website for an elementary school (Tadika Desa Jaya) using Next JS, React JS, Tailwind CSS, TypeScript, Framer Motion & Vercel.",
+      "A website for an elementary school (Tadika Desa Jaya) using NextJS, ReactJS, Tailwind CSS, TypeScript, Framer Motion & Vercel.",
     tags: [
       {
         name: "nextjs",
@@ -279,7 +280,7 @@ const projects = [
   {
     name: "Portfolio V3",
     description:
-      "Personal Portfolio created using ReactJS, Tailwind, ThreeJS and Framer Motion. Experimenting with 3D objects in browser.",
+      "Personal Portfolio created using ReactJS, Tailwind CSS, ThreeJS and Framer Motion. Experimenting with 3D objects in browser.",
     tags: [
       {
         name: "react",
