@@ -398,7 +398,7 @@ const projects = [
   {
     name: "ExpressJS Backend",
     description:
-      "An Express JS backend that uses MongoDB. Has JWT authorization, role module permission, logging, cronjob functionalities and more...",
+      "A backend that uses MongoDB, has JWT authorization, role module permission, logging, cronjob functionalities and more...",
     tags: [
       {
         name: "nodejs",
