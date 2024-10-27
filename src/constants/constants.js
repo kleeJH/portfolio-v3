@@ -11,6 +11,7 @@ import {
   tailwind,
   capitaldynamics,
   htconsulting,
+  vsystems,
   cs,
   python,
   java,
@@ -21,9 +22,10 @@ import {
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
+  prompter,
   authentication,
   messagesender,
-  prompter,
+  expressjsbackend,
   vincenttan,
 } from "../assets";
 
@@ -161,11 +163,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2022 - June 2022",
     points: [
-      "Developing and maintaining web applications using ReactJS and other related technologies",
-      "Development of Mobile App using Dart, Flutter and Bloc design pattern",
-      "Implementing responsive design and ensuring cross-browser compatibility",
-      "Backend development using Django and Django REST Framework to create APIs and webhook listener",
-      "Integrated a Know-Your-Customer service into their Web App, Mobile App, and Backend",
+      "Developed and optimized frontend features for the web app using ReactJS and UI libraries, enhancing user experience and performance",
+      "Quickly adapted to Dart and Flutter for mobile app development, meeting tight deadlines",
+      "Implemented backend services with Python and Django, enhancing server efficiency",
+      "Integrated KYC services across web and mobile platforms, ensuring seamless user onboarding and compliance",
     ],
     remarks: [],
   },
@@ -174,12 +175,25 @@ const experiences = [
     company_name: "HT Consulting (Asia) Sdn. Bhd.",
     icon: htconsulting,
     iconBg: "#D3D3D3",
-    date: "June 2023 - Aug 2023",
+    date: "June 2023 - September 2023",
     points: [
-      "Develop Frontend Web App using modern web technologies (React, MUI)",
-      "Developed small-scale C# ASP.NET Windows App and fixed bugs in existing software",
-      "Fully developed a Backend API using C# ASP.NET",
-      "Contributed to a System Architecture proposal",
+      "Developed user interface components using ReactJS and UI libraries, enhancing overall app performance and ensure PWA",
+      "Quickly learned and applied C# ASP.NET to build Windows apps for testing connection types and logging system responses",
+      "Integrated the cheque deposit machine SDK, resolving critical issues and improving system stability and user experience",
+    ],
+    remarks: [],
+  },
+  {
+    title: "Backend Developer",
+    company_name: "V Systems",
+    icon: vsystems,
+    iconBg: "#D3D3D3",
+    date: "January 2024 - Present",
+    points: [
+      "Developed and implemented backend features for the social media app \"Wolf\" using JavaScript, Node.js, and Express.js, integrating blockchain functionalities for data storage and enabling stable coin transactions for users",
+      "Enhanced user experience by writing efficient backend code and utilizing advanced MongoDB aggregation queries, significantly reducing response times",
+      "Adapted to frequently changing product requirements under tight deadlines, collaborating with cross-functional teams to translate business needs into scalable backend solutions",
+      "Utilized various development tools, including version control, Postman for backend testing, PM2 for process management, and containerization using CapRover, while improving coding skills through teamwork and a focus on code correctness in a fast-paced startup environment",
     ],
     remarks: [],
   },
@@ -306,6 +320,30 @@ const projects = [
     project_link: "https://junhong-portfolio.netlify.app/",
   },
   {
+    name: "Prompter",
+    description:
+      "A web application that allows users to share their prompts used in LLMs (such as Chat GPT) with others.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: prompter,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/nextjs-prompter",
+    has_project_link: false,
+    project_link: null,
+  },
+  {
     name: "JWT Authentication",
     description:
       "Implementation of a simple JWT authentication with the refresh token feature for user login feature.",
@@ -358,26 +396,26 @@ const projects = [
     project_link: null,
   },
   {
-    name: "Prompter",
+    name: "ExpressJS Backend",
     description:
-      "A web application that allows users to share their prompts used in LLMs (such as Chat GPT) with others.",
+      "An Express JS backend that uses MongoDB. Has JWT authorization, role module permission, logging, cronjob functionalities and more...",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "nodejs",
+        color: "violet-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "expressjs",
         color: "green-text-gradient",
       },
       {
-        name: "typescript",
-        color: "pink-text-gradient",
+        name: "mongodb",
+        color: "blue-text-gradient",
       },
     ],
-    image: prompter,
+    image: expressjsbackend,
     has_source_code: true,
-    source_code_link: "https://github.com/kleeJH/nextjs-prompter",
+    source_code_link: "https://github.com/kleeJH/nodejs-backend",
     has_project_link: false,
     project_link: null,
   },

@@ -30,17 +30,19 @@ import r from "./tech/r.png";
 import tensorflow from "./tech/tensorflow.png";
 
 import capitaldynamics from "./company/capitaldynamics.png";
-import htconsulting from "./company/htconsulting.png"
+import htconsulting from "./company/htconsulting.png";
+import vsystems from "./company/vsystems.png";
 
 import tdj from "./projects/tdj.png";
 import portfolio_v1 from "./projects/portfolio-v1.jpg";
 import portfolio_v2 from "./projects/portfolio-v2.jpg";
 import portfolio_v3 from "./projects/portfolio-v3.jpg";
+import prompter from "./projects/prompter.png";
 import authentication from "./projects/authentication.png";
 import messagesender from "./projects/MessageSender_Control.png";
-import prompter from "./projects/prompter.png"
+import expressjsbackend from "./projects/expressjs-backend.png";
 
-import vincenttan from "./testimonials/testimonials-vincenttan.jpeg"
+import vincenttan from "./testimonials/testimonials-vincenttan.jpeg";
 
 export {
   // Logo
@@ -79,18 +81,20 @@ export {
   r,
   tensorflow,
 
-  // Jobs
+  // Companies
   capitaldynamics,
   htconsulting,
+  vsystems,
 
   // Projects
   tdj,
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
-  authentication,
   messagesender,
   prompter,
+  authentication,
+  expressjsbackend,
 
   // Testimonials
   vincenttan,
