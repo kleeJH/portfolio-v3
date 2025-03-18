@@ -194,6 +194,7 @@ const experiences = [
       "Enhanced user experience by writing efficient backend code and utilizing advanced MongoDB aggregation queries, significantly reducing response times",
       "Adapted to frequently changing product requirements under tight deadlines, collaborating with cross-functional teams to translate business needs into scalable backend solutions",
       "Utilized various development tools, including version control, Postman for backend testing, PM2 for process management, and containerization using CapRover, while improving coding skills through teamwork and a focus on code correctness in a fast-paced startup environment",
+      "Initiated a new backend project with NestJS, Mikro-ORM, and PostgreSQL, applying OOP similar to Java's Hibernate, with class-based entities, decorators, and repository patterns; used pgAdmin for database management and set up modular testing workflows for reliable development"
     ],
     remarks: [],
   },
@@ -234,8 +235,8 @@ const projects = [
       },
     ],
     image: tdj,
-    has_source_code: false,
-    source_code_link: null,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/nextjs-tdj",
     has_project_link: true,
     project_link: "https://www.tadikadesajaya.edu.my",
   },
