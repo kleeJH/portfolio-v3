@@ -22,10 +22,6 @@ import {
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
-  prompter,
-  authentication,
-  messagesender,
-  expressjsbackend,
   vincenttan,
 } from "../assets";
 
@@ -188,11 +184,11 @@ const experiences = [
     iconBg: "#D3D3D3",
     date: "January 2024 - Present",
     points: [
-      "Developed and implemented backend features for the social media app \"Wolf\" using JavaScript, Node.js, and Express.js, integrating blockchain functionalities for data storage and enabling stable coin transactions for users",
-      "Enhanced user experience by writing efficient backend code and utilizing advanced MongoDB aggregation queries, significantly reducing response times",
-      "Adapted to frequently changing product requirements under tight deadlines, collaborating with cross-functional teams to translate business needs into scalable backend solutions",
-      "Streamlined development processes using tools like version control, Postman, PM2, and CapRover, while enhancing coding skills and ensuring code correctness in a fast-paced and dynamic startup environment",
-      "Initiated a new backend project with NestJS, Mikro-ORM, and PostgreSQL, applying OOP similar to Java's Hibernate, with class-based entities, decorators, and repository patterns; used pgAdmin for database management and set up modular testing workflows for reliable development"
+      "Built backend features for \"Wolf\" app using JavaScript, Node.js, and Express.js, including blockchain integration for data storage and stablecoin transactions",
+      "Improved response times by optimizing code and using advanced MongoDB aggregation",
+      "Collaborated with cross-functional teams to meet changing requirements and deliver scalable solutions under tight deadlines",
+      "Streamlined development with tools like Git, Postman, PM2, and CapRover in a fast-paced startup environment",
+      "Initiated a new backend system using NestJS, MikroORM, and PostgreSQL, applying OOP principles with class-based entities, decorators, and repositories; managed DBs with pgAdmin and set up modular testing workflows"
     ],
     remarks: [],
   },
@@ -317,106 +313,6 @@ const projects = [
     source_code_link: "https://github.com/kleeJH/portfolio-v3",
     has_project_link: true,
     project_link: "https://junhong-portfolio.netlify.app/",
-  },
-  {
-    name: "Prompter",
-    description:
-      "A web application that allows users to share their prompts used in LLMs (such as Chat GPT) with others.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: prompter,
-    has_source_code: true,
-    source_code_link: "https://github.com/kleeJH/nextjs-prompter",
-    has_project_link: false,
-    project_link: null,
-  },
-  {
-    name: "JWT Authentication",
-    description:
-      "Implementation of a simple JWT authentication with the refresh token feature for user login feature.",
-    tags: [
-      {
-        name: "csharp",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "asp.netcore",
-        color: "green-text-gradient",
-      },
-      {
-        name: "webapi",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "violet-text-gradient",
-      },
-    ],
-    image: authentication,
-    has_source_code: true,
-    source_code_link: "https://github.com/kleeJH/aspdotnet-jwt-auth",
-    has_project_link: false,
-    project_link: null,
-  },
-  {
-    name: "Message Sender",
-    description:
-      "A simple application that sends requests to different communication protocols and displays the response.",
-    tags: [
-      {
-        name: "csharp",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "aspdotnetcore",
-        color: "green-text-gradient",
-      },
-      {
-        name: "windowsform",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: messagesender,
-    has_source_code: true,
-    source_code_link: "https://github.com/kleeJH/dotnet-message-sender",
-    has_project_link: false,
-    project_link: null,
-  },
-  {
-    name: "ExpressJS Backend",
-    description:
-      "A backend that uses MongoDB, has JWT authorization, role module permission, logging, cronjob functionalities and more...",
-    tags: [
-      {
-        name: "nodejs",
-        color: "violet-text-gradient",
-      },
-      {
-        name: "expressjs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: expressjsbackend,
-    has_source_code: true,
-    source_code_link: "https://github.com/kleeJH/nodejs-backend",
-    has_project_link: false,
-    project_link: null,
   },
 ];
 

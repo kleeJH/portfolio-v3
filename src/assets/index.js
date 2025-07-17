@@ -37,10 +37,6 @@ import tdj from "./projects/tdj.png";
 import portfolio_v1 from "./projects/portfolio-v1.jpg";
 import portfolio_v2 from "./projects/portfolio-v2.jpg";
 import portfolio_v3 from "./projects/portfolio-v3.jpg";
-import prompter from "./projects/prompter.png";
-import authentication from "./projects/authentication.png";
-import messagesender from "./projects/MessageSender_Control.png";
-import expressjsbackend from "./projects/expressjs-backend.png";
 
 import vincenttan from "./testimonials/testimonials-vincenttan.jpeg";
 
@@ -91,10 +87,6 @@ export {
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
-  messagesender,
-  prompter,
-  authentication,
-  expressjsbackend,
 
   // Testimonials
   vincenttan,
