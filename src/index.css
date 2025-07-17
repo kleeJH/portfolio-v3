@@ -276,7 +276,6 @@
   animation: gradientAnimation 5s linear infinite; /* Adjust duration as needed */
 }
 
-
 /* Shiny button animation */
 @property --gradient-angle {
   syntax: "<angle>";
@@ -294,13 +293,20 @@
   }
 }
 
-.hero-join-button-dark {
+.shiny-button-wrapper {
   background: linear-gradient(
     var(--gradient-angle),
-    hsla(0, 0%, 100%, 0.5),
-    hsla(0, 0%, 100%, 0.1),
-    #fff,
-    hsla(0, 0%, 100%, 0.3)
-  ) !important;
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1),
+    white,
+    rgba(255, 255, 255, 0.3)
+  );
   animation: gradient-rotate 5s linear infinite reverse;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shiny-button-wrapper:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
 }

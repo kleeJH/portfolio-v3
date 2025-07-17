@@ -6,18 +6,40 @@ import CanvasLoader from "../Loader";
 
 const Earth = () => {
   const earth = useGLTF("./planet_2/scene.glb");
+
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <ambientLight intensity={0.35} />
+    <group>
+      {/* Soft ambient light */}
+      <ambientLight intensity={0.5} />
+
+      {/* Simulated sunlight */}
+      <directionalLight
+        position={[10, 10, 5]}
+        intensity={1.2}
+        castShadow
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+        shadow-camera-far={50}
+        shadow-camera-left={-10}
+        shadow-camera-right={10}
+        shadow-camera-top={10}
+        shadow-camera-bottom={-10}
+      />
+
+      {/* Fill light from the opposite side */}
+      <pointLight position={[-10, -10, -10]} intensity={0.3} color="#aaccff" />
+
+      {/* Slight warm spotlight from front */}
       <spotLight
-        position={[50, 60, 40]}
-        angle={0.12}
+        position={[0, 15, 15]}
+        angle={0.3}
         penumbra={1}
-        intensity={1}
+        intensity={0.8}
         castShadow
         shadow-mapSize={1024}
       />
+
+      {/* Earth model */}
       <primitive
         object={earth.scene}
         dispose={null}
@@ -25,7 +47,7 @@ const Earth = () => {
         position-y={0}
         rotation-y={0}
       />
-    </mesh>
+    </group>
   );
 };
 

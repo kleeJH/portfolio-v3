@@ -163,10 +163,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "January 2022 - June 2022",
     points: [
-      "Developed and optimized frontend features for the web app using ReactJS and UI libraries, enhancing user experience and performance",
-      "Quickly adapted to Dart and Flutter for mobile app development, meeting tight deadlines",
-      "Implemented backend services with Python and Django, enhancing server efficiency",
-      "Integrated KYC services across web and mobile platforms, ensuring seamless user onboarding and compliance",
+      "Developed frontend features using ReactJS, created new modules on an existing mobile app using Dart and Flutter. Implemented new backend services using Python and Django",
+      "Integrated KYC services across web and mobile platforms, ensuring seamless user onboarding and compliance"
     ],
     remarks: [],
   },
@@ -193,7 +191,7 @@ const experiences = [
       "Developed and implemented backend features for the social media app \"Wolf\" using JavaScript, Node.js, and Express.js, integrating blockchain functionalities for data storage and enabling stable coin transactions for users",
       "Enhanced user experience by writing efficient backend code and utilizing advanced MongoDB aggregation queries, significantly reducing response times",
       "Adapted to frequently changing product requirements under tight deadlines, collaborating with cross-functional teams to translate business needs into scalable backend solutions",
-      "Utilized various development tools, including version control, Postman for backend testing, PM2 for process management, and containerization using CapRover, while improving coding skills through teamwork and a focus on code correctness in a fast-paced startup environment",
+      "Streamlined development processes using tools like version control, Postman, PM2, and CapRover, while enhancing coding skills and ensuring code correctness in a fast-paced and dynamic startup environment",
       "Initiated a new backend project with NestJS, Mikro-ORM, and PostgreSQL, applying OOP similar to Java's Hibernate, with class-based entities, decorators, and repository patterns; used pgAdmin for database management and set up modular testing workflows for reliable development"
     ],
     remarks: [],

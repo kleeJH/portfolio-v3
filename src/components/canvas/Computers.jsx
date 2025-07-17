@@ -1,30 +1,42 @@
-import { Suspense, useEffect, useState } from "react";
+// Computers.jsx
+import { Suspense, useMemo, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from "../Loader";
+
+const Lighting = () => (
+  <>
+    <hemisphereLight intensity={0.2} groundColor="black" />
+    <pointLight intensity={0.8} />
+    <spotLight
+      position={[-20, 50, 10]}
+      angle={0.3}
+      penumbra={1}
+      intensity={1.2}
+      castShadow
+      shadow-mapSize-width={1024}
+      shadow-mapSize-height={1024}
+    />
+  </>
+);
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
+
+  const modelProps = useMemo(
+    () => ({
+      scale: isMobile ? 0.7 : 0.75,
+      position: isMobile ? [0, -2, -1.2] : [0, -2.25, -1.5],
+      rotation: [-0.01, -0.2, -0.1],
+    }),
+    [isMobile]
+  );
+
   return (
-    <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={100}
-      />
-      <primitive
-        object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -2, -1.2] : [0, -2.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
-      />
-    </mesh>
+    <group>
+      <Lighting />
+      <primitive object={computer.scene} {...modelProps} />
+    </group>
   );
 };
 
@@ -32,22 +44,14 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 600px)");
+    setIsMobile(mediaQuery.matches);
 
-    setIsMobile(mediaQuery.matches); // Set initial value
-
-    // Define callback function to handle change
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
-    };
-
-    // Add event listener to start listening for changes
+    const handleMediaQueryChange = (e) => setIsMobile(e.matches);
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-    return () => {
+    return () =>
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    };
   }, []);
 
   return (
@@ -65,9 +69,8 @@ const ComputersCanvas = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Computers isMobile={isMobile} />
+        <Preload all />
       </Suspense>
-
-      <Preload all />
     </Canvas>
   );
 };
