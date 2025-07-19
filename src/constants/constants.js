@@ -22,6 +22,8 @@ import {
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
+  drone,
+  neuroacura,
   vincenttan,
 } from "../assets";
 
@@ -205,35 +207,8 @@ const testimonials = [
   },
 ];
 
+// TODO: add neuroacura, fyp drone dance
 const projects = [
-  {
-    name: "TDJ Website",
-    description:
-      "A website for an elementary school (Tadika Desa Jaya) using NextJS, ReactJS, Tailwind CSS, TypeScript, Framer Motion & Vercel.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "framermotion",
-        color: "violet-text-gradient",
-      },
-    ],
-    image: tdj,
-    has_source_code: true,
-    source_code_link: "https://github.com/kleeJH/nextjs-tdj",
-    has_project_link: true,
-    project_link: "https://www.tadikadesajaya.edu.my",
-  },
   {
     name: "Portfolio V1",
     description:
@@ -251,8 +226,13 @@ const projects = [
         name: "js",
         color: "pink-text-gradient",
       },
+      {
+        name: "firstproject",
+        color: "orange-text-gradient",
+      },
     ],
     image: portfolio_v1,
+    is_icon: false,
     has_source_code: true,
     source_code_link: "https://github.com/kleeJH/portfolio-v1",
     has_project_link: true,
@@ -281,6 +261,7 @@ const projects = [
       },
     ],
     image: portfolio_v2,
+    is_icon: false,
     has_source_code: true,
     source_code_link: "https://github.com/kleeJH/portfolio-v2",
     has_project_link: true,
@@ -309,10 +290,98 @@ const projects = [
       },
     ],
     image: portfolio_v3,
+    is_icon: false,
     has_source_code: true,
     source_code_link: "https://github.com/kleeJH/portfolio-v3",
     has_project_link: true,
     project_link: "https://junhong-portfolio.netlify.app/",
+  },
+  {
+    name: "Drone Dance",
+    description:
+      "A final year uni project that focuses on creating a swarm formation based on human gestures.",
+    tags: [
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "opencv",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "tensorflow",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "pyqt5",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: drone,
+    is_icon: true,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/drone-dance",
+    has_project_link: false,
+    project_link: null,
+  },
+  {
+    name: "TDJ Website",
+    description:
+      "A website for an elementary school (Tadika Desa Jaya) using NextJS, ReactJS, Tailwind CSS, TypeScript, Framer Motion & Vercel.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framermotion",
+        color: "violet-text-gradient",
+      },
+    ],
+    image: tdj,
+    is_icon: true,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/nextjs-tdj",
+    has_project_link: true,
+    project_link: "https://www.tadikadesajaya.edu.my",
+  },
+  {
+    name: "Neuroacura",
+    description:
+      "A prototype website that uses brainwave data to perform data analysis and provide insights through neurofeedback therapy.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "auth",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "dataanalysis",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: neuroacura,
+    is_icon: true,
+    has_source_code: true,
+    source_code_link: "https://github.com/kleeJH/neuro-acura",
+    has_project_link: true,
+    project_link: "https://www.neuroacura.com/",
   },
 ];
 

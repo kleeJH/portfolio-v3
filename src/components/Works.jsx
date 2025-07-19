@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  is_icon,
   has_source_code,
   source_code_link,
   has_project_link,
@@ -29,12 +30,26 @@ const ProjectCard = ({
     >
       {isMobile ? (
         <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-          <div className="relative w-full h-[230px]">
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-2xl"
-            />
+          <div
+            className={`relative w-full h-[230px] ${
+              is_icon ? "flex items-center justify-center" : ""
+            }`}
+          >
+            {is_icon ? (
+              <div className="w-full h-full object-cover rounded-2xl bg-primary flex items-center justify-center">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
+            ) : (
+              <img
+                src={image}
+                alt={name}
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            )}
             <div className="absolute inset-0 flex justify-between m-3">
               {has_project_link ? (
                 <motion.div
@@ -83,12 +98,26 @@ const ProjectCard = ({
             speed: 450,
           }}
         >
-          <div className="relative w-full h-[230px]">
-            <img
-              src={image}
-              alt={name}
-              className="w-full h-full object-cover rounded-2xl"
-            />
+          <div
+            className={`relative w-full h-[230px] ${
+              is_icon ? "flex items-center justify-center" : ""
+            }`}
+          >
+            {is_icon ? (
+              <div className="w-full h-full object-cover rounded-2xl bg-primary flex items-center justify-center">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
+            ) : (
+              <img
+                src={image}
+                alt={name}
+                className="w-full h-full object-cover rounded-2xl"
+              />
+            )}
             <div className="absolute inset-0 flex justify-between m-3">
               {has_project_link ? (
                 <motion.div
@@ -183,7 +212,7 @@ const Works = () => {
         </motion.a>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7">
         {displayedProjects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}

@@ -36,7 +36,9 @@ import vsystems from "./company/vsystems.png";
 import tdj from "./projects/tdj.png";
 import portfolio_v1 from "./projects/portfolio-v1.jpg";
 import portfolio_v2 from "./projects/portfolio-v2.jpg";
-import portfolio_v3 from "./projects/portfolio-v3.jpg";
+import portfolio_v3 from "./projects/portfolio-v3.png";
+import drone from "./projects/drone.png";
+import neuroacura from "./projects/neuroacura.png";
 
 import vincenttan from "./testimonials/testimonials-vincenttan.jpeg";
 
@@ -87,6 +89,8 @@ export {
   portfolio_v1,
   portfolio_v2,
   portfolio_v3,
+  drone,
+  neuroacura,
 
   // Testimonials
   vincenttan,

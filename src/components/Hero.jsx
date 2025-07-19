@@ -16,8 +16,9 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-60 cyan-gradient" />
           </div>
           <div>
-            <div className="flex flex-row items-center text-7xl sm:text-8xl mb-5">
+            <div className="flex flex-row items-center mb-5 gap-2">
               <motion.span
+                className="text-6xl sm:text-7xl "
                 role="img"
                 aria-label="waving hand"
                 style={{
@@ -66,7 +67,11 @@ const Hero = () => {
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
-          <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2"
+          >
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -78,7 +83,7 @@ const Hero = () => {
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
-          </div>
+          </motion.div>
         </a>
       </div>
     </section>
