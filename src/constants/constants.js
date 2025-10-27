@@ -184,13 +184,13 @@ const experiences = [
     company_name: "V Systems",
     icon: vsystems,
     iconBg: "#D3D3D3",
-    date: "January 2024 - Present",
+    date: "January 2024 - October 2025",
     points: [
-      "Built backend features for \"Wolf\" app using JavaScript, Node.js, and Express.js, including blockchain integration for data storage and stablecoin transactions",
-      "Improved response times by optimizing code and using advanced MongoDB aggregation",
-      "Collaborated with cross-functional teams to meet changing requirements and deliver scalable solutions under tight deadlines",
-      "Streamlined development with tools like Git, Postman, PM2, and CapRover in a fast-paced startup environment",
-      "Initiated a new backend system using NestJS, MikroORM, and PostgreSQL, applying OOP principles with class-based entities, decorators, and repositories; managed DBs with pgAdmin and set up modular testing workflows"
+      "Developed backend features for a social media platform using Node.js, Express.js, and JavaScript, including blockchain integration for on-chain data storage and stablecoin transactions",
+      "Improved backend efficiency by implementing advanced MongoDB aggregation pipelines, reducing response time by over 50%, and streamlined deployment using PM2 and CapRover",
+      "Designed a new backend architecture with NestJS, MikroORM, and PostgreSQL, applying OOP principles with class-based entities, decorators, and repositories",
+      "Leveraged AI-assisted development and prompt engineering to automate workflows, improve code quality, and accelerate feature delivery",
+      "Collaborated with cross-functional teams to adapt to changing requirements and deliver scalable, production-ready solutions under tight deadlines"
     ],
     remarks: [],
   },
@@ -294,7 +294,7 @@ const projects = [
     has_source_code: true,
     source_code_link: "https://github.com/kleeJH/portfolio-v3",
     has_project_link: true,
-    project_link: "https://junhong-portfolio.netlify.app/",
+    project_link: "https://kleejh.vercel.app/",
   },
   {
     name: "Drone Dance",
